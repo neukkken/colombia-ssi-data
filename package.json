@@ -1,0 +1,31 @@
+{
+  "name": "colombia-ssi",
+  "version": "0.1.0",
+  "description": "Librería para el cálculo del Sistema de Seguridad Social Integral en Colombia (EPS, Pensión, ARL, CCF, Parafiscales)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "node --experimental-vm-modules --test dist/__tests__/*.test.js"
+  },
+  "keywords": [
+    "colombia",
+    "seguridad-social",
+    "eps",
+    "arl",
+    "pension",
+    "ccf",
+    "parafiscales",
+    "salud",
+    "riesgos-laborales",
+    "nomina"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

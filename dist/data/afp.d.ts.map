@@ -1,0 +1,1 @@
+{"version":3,"file":"afp.d.ts","sourceRoot":"","sources":["../../src/data/afp.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,GAAG;IAClB,MAAM,EAAE,MAAM,CAAC;IACf,MAAM,EAAE,MAAM,CAAC;IACf,GAAG,EAAE,MAAM,CAAC;IACZ,OAAO,EAAE,MAAM,CAAC;IAChB,IAAI,EAAE,SAAS,GAAG,SAAS,CAAC;CAC7B;AAED,eAAO,MAAM,QAAQ,EAAE,GAAG,EAoCzB,CAAC"}
