@@ -7,7 +7,7 @@ export { calcularParafiscales } from "./parafiscales";
 export { calcularIBC } from "./utils";
 export { calcularCesantias, calcularPrima, calcularVacaciones, calcularPrestacionesCompletas } from "./prestaciones";
 export { RiesgoARL, TipoCotizante, AportesSalud, AportesPension, AportesARL, AportesCCF, AportesParafiscales, AportesCompletos, DatosLaborales, CesantiasParams, CesantiasResult, PrestacionParams, PrimaResult, VacacionesResult, PrestacionesCompletas, } from "./types";
-export { SALARIO_MINIMO_2025, AUXILIO_TRANSPORTE_2025, TASAS, DIAS_ANO_COMERCIAL, TASA_INTERES_CESANTIAS, } from "./constants";
+export { SALARIO_MINIMO_2025, AUXILIO_TRANSPORTE_2025, SALARIO_MINIMO_2026, AUXILIO_TRANSPORTE_2026, TASAS, DIAS_ANO_COMERCIAL, TASA_INTERES_CESANTIAS, } from "./constants";
 export { EPS_LIST } from "./data/eps";
 export type { EPS } from "./data/eps";
 export { AFP_LIST } from "./data/afp";

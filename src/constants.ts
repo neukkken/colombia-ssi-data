@@ -1,6 +1,9 @@
 export const SALARIO_MINIMO_2025 = 1_423_500;
 export const AUXILIO_TRANSPORTE_2025 = 200_000;
 
+export const SALARIO_MINIMO_2026 = 1_750_905;
+export const AUXILIO_TRANSPORTE_2026 = 249_095;
+
 export const TOPE_MAXIMO_SMLV = 25;
 
 export const DIAS_ANO_COMERCIAL = 360;

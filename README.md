@@ -47,7 +47,7 @@ console.log(result.granTotal); // cesantías + intereses + prima + vacaciones
 Clase principal para cálculos de seguridad social.
 
 ```ts
-const ssi = new SSI(salarioMinimo?: number); // default: $1.423.500 (2025)
+const ssi = new SSI(salarioMinimo?: number); // default: $1.750.905 (2026)
 
 ssi.calcularCompleto(datos: DatosLaborales): AportesCompletos
 ```

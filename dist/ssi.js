@@ -9,7 +9,7 @@ const ccf_1 = require("./ccf");
 const parafiscales_1 = require("./parafiscales");
 const types_1 = require("./types");
 class SSI {
-    constructor(salarioMinimo = constants_1.SALARIO_MINIMO_2025) {
+    constructor(salarioMinimo = constants_1.SALARIO_MINIMO_2026) {
         this.salarioMinimo = salarioMinimo;
     }
     static conSalarioMinimo(salarioMinimo) {

@@ -1,4 +1,4 @@
-import { SALARIO_MINIMO_2025 } from "./constants";
+import { SALARIO_MINIMO_2026 } from "./constants";
 import { calcularSalud } from "./eps";
 import { calcularPension } from "./pension";
 import { calcularARL } from "./arl";
@@ -9,7 +9,7 @@ import { AportesCompletos, DatosLaborales, RiesgoARL, TipoCotizante } from "./ty
 export class SSI {
   private salarioMinimo: number;
 
-  constructor(salarioMinimo: number = SALARIO_MINIMO_2025) {
+  constructor(salarioMinimo: number = SALARIO_MINIMO_2026) {
     this.salarioMinimo = salarioMinimo;
   }
 

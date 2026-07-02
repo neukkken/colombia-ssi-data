@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CESANTIAS_LIST = exports.CCF_LIST = exports.ARL_LIST = exports.AFP_LIST = exports.EPS_LIST = exports.TASA_INTERES_CESANTIAS = exports.DIAS_ANO_COMERCIAL = exports.TASAS = exports.AUXILIO_TRANSPORTE_2025 = exports.SALARIO_MINIMO_2025 = exports.TipoCotizante = exports.RiesgoARL = exports.calcularPrestacionesCompletas = exports.calcularVacaciones = exports.calcularPrima = exports.calcularCesantias = exports.calcularIBC = exports.calcularParafiscales = exports.calcularCCF = exports.calcularARL = exports.calcularPension = exports.calcularSalud = exports.SSI = void 0;
+exports.CESANTIAS_LIST = exports.CCF_LIST = exports.ARL_LIST = exports.AFP_LIST = exports.EPS_LIST = exports.TASA_INTERES_CESANTIAS = exports.DIAS_ANO_COMERCIAL = exports.TASAS = exports.AUXILIO_TRANSPORTE_2026 = exports.SALARIO_MINIMO_2026 = exports.AUXILIO_TRANSPORTE_2025 = exports.SALARIO_MINIMO_2025 = exports.TipoCotizante = exports.RiesgoARL = exports.calcularPrestacionesCompletas = exports.calcularVacaciones = exports.calcularPrima = exports.calcularCesantias = exports.calcularIBC = exports.calcularParafiscales = exports.calcularCCF = exports.calcularARL = exports.calcularPension = exports.calcularSalud = exports.SSI = void 0;
 var ssi_1 = require("./ssi");
 Object.defineProperty(exports, "SSI", { enumerable: true, get: function () { return ssi_1.SSI; } });
 var eps_1 = require("./eps");
@@ -26,6 +26,8 @@ Object.defineProperty(exports, "TipoCotizante", { enumerable: true, get: functio
 var constants_1 = require("./constants");
 Object.defineProperty(exports, "SALARIO_MINIMO_2025", { enumerable: true, get: function () { return constants_1.SALARIO_MINIMO_2025; } });
 Object.defineProperty(exports, "AUXILIO_TRANSPORTE_2025", { enumerable: true, get: function () { return constants_1.AUXILIO_TRANSPORTE_2025; } });
+Object.defineProperty(exports, "SALARIO_MINIMO_2026", { enumerable: true, get: function () { return constants_1.SALARIO_MINIMO_2026; } });
+Object.defineProperty(exports, "AUXILIO_TRANSPORTE_2026", { enumerable: true, get: function () { return constants_1.AUXILIO_TRANSPORTE_2026; } });
 Object.defineProperty(exports, "TASAS", { enumerable: true, get: function () { return constants_1.TASAS; } });
 Object.defineProperty(exports, "DIAS_ANO_COMERCIAL", { enumerable: true, get: function () { return constants_1.DIAS_ANO_COMERCIAL; } });
 Object.defineProperty(exports, "TASA_INTERES_CESANTIAS", { enumerable: true, get: function () { return constants_1.TASA_INTERES_CESANTIAS; } });
