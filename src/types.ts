@@ -61,6 +61,23 @@ export interface AportesCompletos {
   granTotal: number;
 }
 
+export interface CesantiasParams {
+  salarioBase: number;
+  tipoCotizante: TipoCotizante;
+  diasTrabajados?: number;
+  fechaInicio?: Date;
+  fechaFin?: Date;
+  salarioMinimo?: number;
+}
+
+export interface CesantiasResult {
+  cesantias: number;
+  interesesCesantias: number;
+  total: number;
+  diasTrabajados: number;
+  aplica: boolean;
+}
+
 export interface DatosLaborales {
   salarioBase: number;
   tipoCotizante: TipoCotizante;

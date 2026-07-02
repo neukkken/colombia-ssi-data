@@ -3,6 +3,10 @@ export const AUXILIO_TRANSPORTE_2025 = 200_000;
 
 export const TOPE_MAXIMO_SMLV = 25;
 
+export const DIAS_ANO_COMERCIAL = 360;
+
+export const TASA_INTERES_CESANTIAS = 0.12;
+
 export const TASAS = {
   SALUD: {
     TOTAL: 0.125,

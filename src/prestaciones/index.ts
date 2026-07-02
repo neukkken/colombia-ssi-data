@@ -1,0 +1,1 @@
+export { calcularCesantias } from "./cesantias";

@@ -5,6 +5,7 @@ export { calcularARL } from "./arl";
 export { calcularCCF } from "./ccf";
 export { calcularParafiscales } from "./parafiscales";
 export { calcularIBC } from "./utils";
+export { calcularCesantias } from "./prestaciones";
 
 export {
   RiesgoARL,
@@ -16,12 +17,16 @@ export {
   AportesParafiscales,
   AportesCompletos,
   DatosLaborales,
+  CesantiasParams,
+  CesantiasResult,
 } from "./types";
 
 export {
   SALARIO_MINIMO_2025,
   AUXILIO_TRANSPORTE_2025,
   TASAS,
+  DIAS_ANO_COMERCIAL,
+  TASA_INTERES_CESANTIAS,
 } from "./constants";
 
 export { EPS_LIST } from "./data/eps";

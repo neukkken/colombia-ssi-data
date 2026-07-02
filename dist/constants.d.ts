@@ -1,6 +1,8 @@
 export declare const SALARIO_MINIMO_2025 = 1423500;
 export declare const AUXILIO_TRANSPORTE_2025 = 200000;
 export declare const TOPE_MAXIMO_SMLV = 25;
+export declare const DIAS_ANO_COMERCIAL = 360;
+export declare const TASA_INTERES_CESANTIAS = 0.12;
 export declare const TASAS: {
     readonly SALUD: {
         readonly TOTAL: 0.125;

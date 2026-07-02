@@ -1,9 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TASAS = exports.TOPE_MAXIMO_SMLV = exports.AUXILIO_TRANSPORTE_2025 = exports.SALARIO_MINIMO_2025 = void 0;
+exports.TASAS = exports.TASA_INTERES_CESANTIAS = exports.DIAS_ANO_COMERCIAL = exports.TOPE_MAXIMO_SMLV = exports.AUXILIO_TRANSPORTE_2025 = exports.SALARIO_MINIMO_2025 = void 0;
 exports.SALARIO_MINIMO_2025 = 1423500;
 exports.AUXILIO_TRANSPORTE_2025 = 200000;
 exports.TOPE_MAXIMO_SMLV = 25;
+exports.DIAS_ANO_COMERCIAL = 360;
+exports.TASA_INTERES_CESANTIAS = 0.12;
 exports.TASAS = {
     SALUD: {
         TOTAL: 0.125,
