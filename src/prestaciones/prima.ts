@@ -1,5 +1,6 @@
 import { DIAS_ANO_COMERCIAL } from "../constants";
 import { PrestacionParams, PrimaResult, TipoCotizante } from "../types";
+import { calcularDiasLaborados } from "../utils";
 
 export function calcularPrima(params: PrestacionParams): PrimaResult {
   const { salarioBase, tipoCotizante, diasTrabajados, fechaInicio, fechaFin } = params;
@@ -12,12 +13,7 @@ export function calcularPrima(params: PrestacionParams): PrimaResult {
     };
   }
 
-  let dias = diasTrabajados;
-  if (dias === undefined && fechaInicio && fechaFin) {
-    const diffMs = fechaFin.getTime() - fechaInicio.getTime();
-    dias = Math.floor(diffMs / (1000 * 60 * 60 * 24));
-  }
-  dias = dias ?? DIAS_ANO_COMERCIAL;
+  const dias = calcularDiasLaborados(diasTrabajados, fechaInicio, fechaFin);
 
   return {
     prima: Math.round((salarioBase * dias) / DIAS_ANO_COMERCIAL),

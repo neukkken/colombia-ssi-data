@@ -1,5 +1,6 @@
 import { DIAS_ANO_COMERCIAL, TASA_INTERES_CESANTIAS } from "../constants";
 import { CesantiasParams, CesantiasResult, TipoCotizante } from "../types";
+import { calcularDiasLaborados } from "../utils";
 
 export function calcularCesantias(params: CesantiasParams): CesantiasResult {
   const { salarioBase, tipoCotizante, diasTrabajados, fechaInicio, fechaFin } = params;
@@ -14,12 +15,7 @@ export function calcularCesantias(params: CesantiasParams): CesantiasResult {
     };
   }
 
-  let dias = diasTrabajados;
-  if (dias === undefined && fechaInicio && fechaFin) {
-    const diffMs = fechaFin.getTime() - fechaInicio.getTime();
-    dias = Math.floor(diffMs / (1000 * 60 * 60 * 24));
-  }
-  dias = dias ?? DIAS_ANO_COMERCIAL;
+  const dias = calcularDiasLaborados(diasTrabajados, fechaInicio, fechaFin);
 
   const cesantias = Math.round((salarioBase * dias) / DIAS_ANO_COMERCIAL);
   const interesesCesantias = Math.round((cesantias * TASA_INTERES_CESANTIAS * dias) / DIAS_ANO_COMERCIAL);

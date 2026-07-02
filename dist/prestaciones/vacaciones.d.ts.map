@@ -1,1 +1,1 @@
-{"version":3,"file":"vacaciones.d.ts","sourceRoot":"","sources":["../../src/prestaciones/vacaciones.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,gBAAgB,EAAE,gBAAgB,EAAiB,MAAM,UAAU,CAAC;AAE7E,wBAAgB,kBAAkB,CAAC,MAAM,EAAE,gBAAgB,GAAG,gBAAgB,CAuB7E"}
+{"version":3,"file":"vacaciones.d.ts","sourceRoot":"","sources":["../../src/prestaciones/vacaciones.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,gBAAgB,EAAE,gBAAgB,EAAiB,MAAM,UAAU,CAAC;AAG7E,wBAAgB,kBAAkB,CAAC,MAAM,EAAE,gBAAgB,GAAG,gBAAgB,CAkB7E"}

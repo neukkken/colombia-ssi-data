@@ -10,6 +10,12 @@ export const DIAS_ANO_COMERCIAL = 360;
 
 export const TASA_INTERES_CESANTIAS = 0.12;
 
+export const TOPE_AUXILIO_TRANSPORTE_SMLV = 2;
+
+export const HORAS_SEMANALES_MAXIMO = 42;
+
+export const DIAS_SEMANA_LABORALES = 6;
+
 export const TASAS = {
   SALUD: {
     TOTAL: 0.125,
@@ -22,7 +28,7 @@ export const TASAS = {
     EMPLEADOR: 0.12,
     FONDO_SOLIDARIDAD: {
       UMBRAL_SMLV: 4,
-      TASA: 0.01,
+      TASA_BASE: 0.01,
     },
   },
   ARL: {

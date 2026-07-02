@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calcularPrestacionesCompletas = exports.calcularVacaciones = exports.calcularPrima = exports.calcularCesantias = void 0;
+exports.calcularLiquidacionNomina = exports.calcularSalarioIntegral = exports.calcularValorHoraOrdinaria = exports.calcularIndemnizacion = exports.calcularAuxilioTransporte = exports.calcularPrestacionesCompletas = exports.calcularVacaciones = exports.calcularPrima = exports.calcularCesantias = void 0;
 var cesantias_1 = require("./cesantias");
 Object.defineProperty(exports, "calcularCesantias", { enumerable: true, get: function () { return cesantias_1.calcularCesantias; } });
 var prima_1 = require("./prima");
@@ -9,4 +9,14 @@ var vacaciones_1 = require("./vacaciones");
 Object.defineProperty(exports, "calcularVacaciones", { enumerable: true, get: function () { return vacaciones_1.calcularVacaciones; } });
 var prestaciones_completas_1 = require("./prestaciones-completas");
 Object.defineProperty(exports, "calcularPrestacionesCompletas", { enumerable: true, get: function () { return prestaciones_completas_1.calcularPrestacionesCompletas; } });
+var auxilio_transporte_1 = require("./auxilio-transporte");
+Object.defineProperty(exports, "calcularAuxilioTransporte", { enumerable: true, get: function () { return auxilio_transporte_1.calcularAuxilioTransporte; } });
+var indemnizacion_1 = require("./indemnizacion");
+Object.defineProperty(exports, "calcularIndemnizacion", { enumerable: true, get: function () { return indemnizacion_1.calcularIndemnizacion; } });
+var valor_hora_1 = require("./valor-hora");
+Object.defineProperty(exports, "calcularValorHoraOrdinaria", { enumerable: true, get: function () { return valor_hora_1.calcularValorHoraOrdinaria; } });
+var salario_integral_1 = require("./salario-integral");
+Object.defineProperty(exports, "calcularSalarioIntegral", { enumerable: true, get: function () { return salario_integral_1.calcularSalarioIntegral; } });
+var liquidacion_nomina_1 = require("./liquidacion-nomina");
+Object.defineProperty(exports, "calcularLiquidacionNomina", { enumerable: true, get: function () { return liquidacion_nomina_1.calcularLiquidacionNomina; } });
 //# sourceMappingURL=index.js.map

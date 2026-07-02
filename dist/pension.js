@@ -4,7 +4,7 @@ exports.calcularPension = calcularPension;
 const constants_1 = require("./constants");
 const types_1 = require("./types");
 const utils_1 = require("./utils");
-function calcularPension(salarioBase, tipoCotizante, salarioMinimo = constants_1.SALARIO_MINIMO_2025) {
+function calcularPension(salarioBase, tipoCotizante, salarioMinimo = constants_1.SALARIO_MINIMO_2026) {
     const ibc = (0, utils_1.calcularIBC)(salarioBase, salarioMinimo);
     const esIndependiente = tipoCotizante === types_1.TipoCotizante.INDEPENDIENTE;
     const total = Math.round(ibc * constants_1.TASAS.PENSION.TOTAL);
@@ -13,7 +13,21 @@ function calcularPension(salarioBase, tipoCotizante, salarioMinimo = constants_1
     const smlv = salarioMinimo;
     let fondoDeSolidaridad;
     if (ibc > smlv * constants_1.TASAS.PENSION.FONDO_SOLIDARIDAD.UMBRAL_SMLV) {
-        fondoDeSolidaridad = Math.round(ibc * constants_1.TASAS.PENSION.FONDO_SOLIDARIDAD.TASA);
+        const smlvs = ibc / smlv;
+        let tasaSolidaridad = constants_1.TASAS.PENSION.FONDO_SOLIDARIDAD.TASA_BASE;
+        if (smlvs > 16) {
+            if (smlvs <= 17)
+                tasaSolidaridad = 0.012;
+            else if (smlvs <= 18)
+                tasaSolidaridad = 0.014;
+            else if (smlvs <= 19)
+                tasaSolidaridad = 0.016;
+            else if (smlvs <= 20)
+                tasaSolidaridad = 0.018;
+            else
+                tasaSolidaridad = 0.02;
+        }
+        fondoDeSolidaridad = Math.round(ibc * tasaSolidaridad);
     }
     return {
         total,

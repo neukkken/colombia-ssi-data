@@ -11,6 +11,11 @@ export enum TipoCotizante {
   INDEPENDIENTE = "INDEPENDIENTE",
 }
 
+export enum TipoContrato {
+  INDEFINIDO = "INDEFINIDO",
+  FIJO = "FIJO",
+}
+
 export interface AportesSalud {
   total: number;
   empleado: number;
@@ -32,6 +37,7 @@ export interface AportesPension {
 
 export interface AportesARL {
   total: number;
+  empleado: number;
   empleador: number;
   porcentaje: number;
   nivelRiesgo: RiesgoARL;
@@ -98,6 +104,67 @@ export interface PrestacionesCompletas {
   vacaciones: VacacionesResult;
   totalPrestaciones: number;
   granTotal: number;
+}
+
+export interface AuxilioTransporteResult {
+  auxilioTransporte: number;
+  aplica: boolean;
+  smlv: number;
+}
+
+export interface IndemnizacionParams {
+  salarioBase: number;
+  tipoContrato: TipoContrato;
+  fechaInicio: Date;
+  fechaFin: Date;
+  salarioMinimo?: number;
+}
+
+export interface IndemnizacionResult {
+  indemnizacion: number;
+  tipoContrato: TipoContrato;
+  salarioBase: number;
+  aniosCompletos: number;
+  mesesFraccion: number;
+  diasSalario: number;
+  aplica: boolean;
+}
+
+export interface ValorHoraResult {
+  valorHoraOrdinaria: number;
+  horasSemanales: number;
+  horasDiarias: number;
+}
+
+export interface SalarioIntegralResult {
+  esIntegral: boolean;
+  salarioBase: number;
+  factorPrestacional: number;
+  salarioSinPrestaciones: number;
+  smlv: number;
+}
+
+export interface LiquidacionNominaResult {
+  salarioBase: number;
+  auxilioTransporte: number;
+  totalDevengado: number;
+  deduccionSalud: number;
+  deduccionPension: number;
+  totalDeducciones: number;
+  netoAPagar: number;
+  salud: AportesSalud;
+  pension: AportesPension;
+  arl: AportesARL;
+  ccf: AportesCCF;
+  parafiscales: AportesParafiscales;
+  provisionCesantias: number;
+  provisionInteresesCesantias: number;
+  provisionPrima: number;
+  provisionVacaciones: number;
+  totalSeguridadSocialEmpleador: number;
+  totalParafiscales: number;
+  totalProvisiones: number;
+  costoTotalEmpleador: number;
 }
 
 export interface DatosLaborales {

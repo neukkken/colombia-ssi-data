@@ -9,10 +9,11 @@ function calcularARL(salarioBase, nivelRiesgo, tipoCotizante, salarioMinimo) {
     const esIndependiente = tipoCotizante === types_1.TipoCotizante.INDEPENDIENTE;
     const porcentaje = constants_1.TASAS.ARL;
     const tasa = porcentaje[nivelRiesgo];
-    const total = esIndependiente ? 0 : Math.round(ibc * tasa);
+    const total = Math.round(ibc * tasa);
     return {
         total,
-        empleador: total,
+        empleado: esIndependiente ? total : 0,
+        empleador: esIndependiente ? 0 : total,
         porcentaje: tasa,
         nivelRiesgo,
     };

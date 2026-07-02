@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TipoCotizante = exports.RiesgoARL = void 0;
+exports.TipoContrato = exports.TipoCotizante = exports.RiesgoARL = void 0;
 var RiesgoARL;
 (function (RiesgoARL) {
     RiesgoARL[RiesgoARL["I"] = 1] = "I";
@@ -14,4 +14,9 @@ var TipoCotizante;
     TipoCotizante["DEPENDIENTE"] = "DEPENDIENTE";
     TipoCotizante["INDEPENDIENTE"] = "INDEPENDIENTE";
 })(TipoCotizante || (exports.TipoCotizante = TipoCotizante = {}));
+var TipoContrato;
+(function (TipoContrato) {
+    TipoContrato["INDEFINIDO"] = "INDEFINIDO";
+    TipoContrato["FIJO"] = "FIJO";
+})(TipoContrato || (exports.TipoContrato = TipoContrato = {}));
 //# sourceMappingURL=types.js.map

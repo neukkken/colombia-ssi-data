@@ -5,6 +5,9 @@ export declare const AUXILIO_TRANSPORTE_2026 = 249095;
 export declare const TOPE_MAXIMO_SMLV = 25;
 export declare const DIAS_ANO_COMERCIAL = 360;
 export declare const TASA_INTERES_CESANTIAS = 0.12;
+export declare const TOPE_AUXILIO_TRANSPORTE_SMLV = 2;
+export declare const HORAS_SEMANALES_MAXIMO = 42;
+export declare const DIAS_SEMANA_LABORALES = 6;
 export declare const TASAS: {
     readonly SALUD: {
         readonly TOTAL: 0.125;
@@ -17,7 +20,7 @@ export declare const TASAS: {
         readonly EMPLEADOR: 0.12;
         readonly FONDO_SOLIDARIDAD: {
             readonly UMBRAL_SMLV: 4;
-            readonly TASA: 0.01;
+            readonly TASA_BASE: 0.01;
         };
     };
     readonly ARL: {

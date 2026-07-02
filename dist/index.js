@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CESANTIAS_LIST = exports.CCF_LIST = exports.ARL_LIST = exports.AFP_LIST = exports.EPS_LIST = exports.TASA_INTERES_CESANTIAS = exports.DIAS_ANO_COMERCIAL = exports.TASAS = exports.AUXILIO_TRANSPORTE_2026 = exports.SALARIO_MINIMO_2026 = exports.AUXILIO_TRANSPORTE_2025 = exports.SALARIO_MINIMO_2025 = exports.TipoCotizante = exports.RiesgoARL = exports.calcularPrestacionesCompletas = exports.calcularVacaciones = exports.calcularPrima = exports.calcularCesantias = exports.calcularIBC = exports.calcularParafiscales = exports.calcularCCF = exports.calcularARL = exports.calcularPension = exports.calcularSalud = exports.SSI = void 0;
+exports.CESANTIAS_LIST = exports.CCF_LIST = exports.ARL_LIST = exports.AFP_LIST = exports.EPS_LIST = exports.DIAS_SEMANA_LABORALES = exports.HORAS_SEMANALES_MAXIMO = exports.TOPE_AUXILIO_TRANSPORTE_SMLV = exports.TASA_INTERES_CESANTIAS = exports.DIAS_ANO_COMERCIAL = exports.TASAS = exports.AUXILIO_TRANSPORTE_2026 = exports.SALARIO_MINIMO_2026 = exports.AUXILIO_TRANSPORTE_2025 = exports.SALARIO_MINIMO_2025 = exports.TipoContrato = exports.TipoCotizante = exports.RiesgoARL = exports.calcularLiquidacionNomina = exports.calcularSalarioIntegral = exports.calcularValorHoraOrdinaria = exports.calcularIndemnizacion = exports.calcularAuxilioTransporte = exports.calcularPrestacionesCompletas = exports.calcularVacaciones = exports.calcularPrima = exports.calcularCesantias = exports.calcularIBC = exports.calcularParafiscales = exports.calcularCCF = exports.calcularARL = exports.calcularPension = exports.calcularSalud = exports.SSI = void 0;
 var ssi_1 = require("./ssi");
 Object.defineProperty(exports, "SSI", { enumerable: true, get: function () { return ssi_1.SSI; } });
 var eps_1 = require("./eps");
@@ -20,9 +20,15 @@ Object.defineProperty(exports, "calcularCesantias", { enumerable: true, get: fun
 Object.defineProperty(exports, "calcularPrima", { enumerable: true, get: function () { return prestaciones_1.calcularPrima; } });
 Object.defineProperty(exports, "calcularVacaciones", { enumerable: true, get: function () { return prestaciones_1.calcularVacaciones; } });
 Object.defineProperty(exports, "calcularPrestacionesCompletas", { enumerable: true, get: function () { return prestaciones_1.calcularPrestacionesCompletas; } });
+Object.defineProperty(exports, "calcularAuxilioTransporte", { enumerable: true, get: function () { return prestaciones_1.calcularAuxilioTransporte; } });
+Object.defineProperty(exports, "calcularIndemnizacion", { enumerable: true, get: function () { return prestaciones_1.calcularIndemnizacion; } });
+Object.defineProperty(exports, "calcularValorHoraOrdinaria", { enumerable: true, get: function () { return prestaciones_1.calcularValorHoraOrdinaria; } });
+Object.defineProperty(exports, "calcularSalarioIntegral", { enumerable: true, get: function () { return prestaciones_1.calcularSalarioIntegral; } });
+Object.defineProperty(exports, "calcularLiquidacionNomina", { enumerable: true, get: function () { return prestaciones_1.calcularLiquidacionNomina; } });
 var types_1 = require("./types");
 Object.defineProperty(exports, "RiesgoARL", { enumerable: true, get: function () { return types_1.RiesgoARL; } });
 Object.defineProperty(exports, "TipoCotizante", { enumerable: true, get: function () { return types_1.TipoCotizante; } });
+Object.defineProperty(exports, "TipoContrato", { enumerable: true, get: function () { return types_1.TipoContrato; } });
 var constants_1 = require("./constants");
 Object.defineProperty(exports, "SALARIO_MINIMO_2025", { enumerable: true, get: function () { return constants_1.SALARIO_MINIMO_2025; } });
 Object.defineProperty(exports, "AUXILIO_TRANSPORTE_2025", { enumerable: true, get: function () { return constants_1.AUXILIO_TRANSPORTE_2025; } });
@@ -31,6 +37,9 @@ Object.defineProperty(exports, "AUXILIO_TRANSPORTE_2026", { enumerable: true, ge
 Object.defineProperty(exports, "TASAS", { enumerable: true, get: function () { return constants_1.TASAS; } });
 Object.defineProperty(exports, "DIAS_ANO_COMERCIAL", { enumerable: true, get: function () { return constants_1.DIAS_ANO_COMERCIAL; } });
 Object.defineProperty(exports, "TASA_INTERES_CESANTIAS", { enumerable: true, get: function () { return constants_1.TASA_INTERES_CESANTIAS; } });
+Object.defineProperty(exports, "TOPE_AUXILIO_TRANSPORTE_SMLV", { enumerable: true, get: function () { return constants_1.TOPE_AUXILIO_TRANSPORTE_SMLV; } });
+Object.defineProperty(exports, "HORAS_SEMANALES_MAXIMO", { enumerable: true, get: function () { return constants_1.HORAS_SEMANALES_MAXIMO; } });
+Object.defineProperty(exports, "DIAS_SEMANA_LABORALES", { enumerable: true, get: function () { return constants_1.DIAS_SEMANA_LABORALES; } });
 var eps_2 = require("./data/eps");
 Object.defineProperty(exports, "EPS_LIST", { enumerable: true, get: function () { return eps_2.EPS_LIST; } });
 var afp_1 = require("./data/afp");

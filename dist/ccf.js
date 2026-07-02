@@ -4,7 +4,7 @@ exports.calcularCCF = calcularCCF;
 const constants_1 = require("./constants");
 const types_1 = require("./types");
 const utils_1 = require("./utils");
-function calcularCCF(salarioBase, tipoCotizante, salarioMinimo = constants_1.SALARIO_MINIMO_2025) {
+function calcularCCF(salarioBase, tipoCotizante, salarioMinimo = constants_1.SALARIO_MINIMO_2026) {
     const ibc = (0, utils_1.calcularIBC)(salarioBase, salarioMinimo);
     if (tipoCotizante === types_1.TipoCotizante.INDEPENDIENTE) {
         return { total: 0, empleador: 0, porcentaje: constants_1.TASAS.CCF.TASA, aplica: false };

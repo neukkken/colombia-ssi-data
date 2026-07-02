@@ -5,11 +5,22 @@ export { calcularARL } from "./arl";
 export { calcularCCF } from "./ccf";
 export { calcularParafiscales } from "./parafiscales";
 export { calcularIBC } from "./utils";
-export { calcularCesantias, calcularPrima, calcularVacaciones, calcularPrestacionesCompletas } from "./prestaciones";
+export {
+  calcularCesantias,
+  calcularPrima,
+  calcularVacaciones,
+  calcularPrestacionesCompletas,
+  calcularAuxilioTransporte,
+  calcularIndemnizacion,
+  calcularValorHoraOrdinaria,
+  calcularSalarioIntegral,
+  calcularLiquidacionNomina,
+} from "./prestaciones";
 
 export {
   RiesgoARL,
   TipoCotizante,
+  TipoContrato,
   AportesSalud,
   AportesPension,
   AportesARL,
@@ -23,6 +34,12 @@ export {
   PrimaResult,
   VacacionesResult,
   PrestacionesCompletas,
+  AuxilioTransporteResult,
+  IndemnizacionParams,
+  IndemnizacionResult,
+  ValorHoraResult,
+  SalarioIntegralResult,
+  LiquidacionNominaResult,
 } from "./types";
 
 export {
@@ -33,6 +50,9 @@ export {
   TASAS,
   DIAS_ANO_COMERCIAL,
   TASA_INTERES_CESANTIAS,
+  TOPE_AUXILIO_TRANSPORTE_SMLV,
+  HORAS_SEMANALES_MAXIMO,
+  DIAS_SEMANA_LABORALES,
 } from "./constants";
 
 export { EPS_LIST } from "./data/eps";

@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.calcularPrima = calcularPrima;
 const constants_1 = require("../constants");
 const types_1 = require("../types");
+const utils_1 = require("../utils");
 function calcularPrima(params) {
     const { salarioBase, tipoCotizante, diasTrabajados, fechaInicio, fechaFin } = params;
     if (tipoCotizante === types_1.TipoCotizante.INDEPENDIENTE) {
@@ -12,12 +13,7 @@ function calcularPrima(params) {
             aplica: false,
         };
     }
-    let dias = diasTrabajados;
-    if (dias === undefined && fechaInicio && fechaFin) {
-        const diffMs = fechaFin.getTime() - fechaInicio.getTime();
-        dias = Math.floor(diffMs / (1000 * 60 * 60 * 24));
-    }
-    dias = dias ?? constants_1.DIAS_ANO_COMERCIAL;
+    const dias = (0, utils_1.calcularDiasLaborados)(diasTrabajados, fechaInicio, fechaFin);
     return {
         prima: Math.round((salarioBase * dias) / constants_1.DIAS_ANO_COMERCIAL),
         diasTrabajados: dias,

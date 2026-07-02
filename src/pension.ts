@@ -1,11 +1,11 @@
-import { SALARIO_MINIMO_2025, TASAS } from "./constants";
+import { SALARIO_MINIMO_2026, TASAS } from "./constants";
 import { AportesPension, TipoCotizante } from "./types";
 import { calcularIBC } from "./utils";
 
 export function calcularPension(
   salarioBase: number,
   tipoCotizante: TipoCotizante,
-  salarioMinimo: number = SALARIO_MINIMO_2025
+  salarioMinimo: number = SALARIO_MINIMO_2026
 ): AportesPension {
   const ibc = calcularIBC(salarioBase, salarioMinimo);
   const esIndependiente = tipoCotizante === TipoCotizante.INDEPENDIENTE;
@@ -18,7 +18,18 @@ export function calcularPension(
   let fondoDeSolidaridad: number | undefined;
 
   if (ibc > smlv * TASAS.PENSION.FONDO_SOLIDARIDAD.UMBRAL_SMLV) {
-    fondoDeSolidaridad = Math.round(ibc * TASAS.PENSION.FONDO_SOLIDARIDAD.TASA);
+    const smlvs = ibc / smlv;
+    let tasaSolidaridad: number = TASAS.PENSION.FONDO_SOLIDARIDAD.TASA_BASE;
+
+    if (smlvs > 16) {
+      if (smlvs <= 17) tasaSolidaridad = 0.012;
+      else if (smlvs <= 18) tasaSolidaridad = 0.014;
+      else if (smlvs <= 19) tasaSolidaridad = 0.016;
+      else if (smlvs <= 20) tasaSolidaridad = 0.018;
+      else tasaSolidaridad = 0.02;
+    }
+
+    fondoDeSolidaridad = Math.round(ibc * tasaSolidaridad);
   }
 
   return {

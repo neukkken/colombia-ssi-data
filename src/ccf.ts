@@ -1,11 +1,11 @@
-import { SALARIO_MINIMO_2025, TASAS } from "./constants";
+import { SALARIO_MINIMO_2026, TASAS } from "./constants";
 import { AportesCCF, TipoCotizante } from "./types";
 import { calcularIBC } from "./utils";
 
 export function calcularCCF(
   salarioBase: number,
   tipoCotizante: TipoCotizante,
-  salarioMinimo: number = SALARIO_MINIMO_2025
+  salarioMinimo: number = SALARIO_MINIMO_2026
 ): AportesCCF {
   const ibc = calcularIBC(salarioBase, salarioMinimo);
 
