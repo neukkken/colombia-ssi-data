@@ -5,8 +5,8 @@ export { calcularARL } from "./arl";
 export { calcularCCF } from "./ccf";
 export { calcularParafiscales } from "./parafiscales";
 export { calcularIBC } from "./utils";
-export { calcularCesantias } from "./prestaciones";
-export { RiesgoARL, TipoCotizante, AportesSalud, AportesPension, AportesARL, AportesCCF, AportesParafiscales, AportesCompletos, DatosLaborales, CesantiasParams, CesantiasResult, } from "./types";
+export { calcularCesantias, calcularPrima, calcularVacaciones, calcularPrestacionesCompletas } from "./prestaciones";
+export { RiesgoARL, TipoCotizante, AportesSalud, AportesPension, AportesARL, AportesCCF, AportesParafiscales, AportesCompletos, DatosLaborales, CesantiasParams, CesantiasResult, PrestacionParams, PrimaResult, VacacionesResult, PrestacionesCompletas, } from "./types";
 export { SALARIO_MINIMO_2025, AUXILIO_TRANSPORTE_2025, TASAS, DIAS_ANO_COMERCIAL, TASA_INTERES_CESANTIAS, } from "./constants";
 export { EPS_LIST } from "./data/eps";
 export type { EPS } from "./data/eps";
@@ -16,4 +16,6 @@ export { ARL_LIST } from "./data/arl";
 export type { ARL } from "./data/arl";
 export { CCF_LIST } from "./data/ccf";
 export type { CCF } from "./data/ccf";
+export { CESANTIAS_LIST } from "./data/cesantias";
+export type { CesantiasFondo } from "./data/cesantias";
 //# sourceMappingURL=index.d.ts.map

@@ -53,7 +53,7 @@ export interface AportesCompletos {
     totalParafiscales: number;
     granTotal: number;
 }
-export interface CesantiasParams {
+export interface PrestacionParams {
     salarioBase: number;
     tipoCotizante: TipoCotizante;
     diasTrabajados?: number;
@@ -61,12 +61,31 @@ export interface CesantiasParams {
     fechaFin?: Date;
     salarioMinimo?: number;
 }
+export interface CesantiasParams extends PrestacionParams {
+}
 export interface CesantiasResult {
     cesantias: number;
     interesesCesantias: number;
     total: number;
     diasTrabajados: number;
     aplica: boolean;
+}
+export interface PrimaResult {
+    prima: number;
+    diasTrabajados: number;
+    aplica: boolean;
+}
+export interface VacacionesResult {
+    vacaciones: number;
+    diasTrabajados: number;
+    aplica: boolean;
+}
+export interface PrestacionesCompletas {
+    cesantias: CesantiasResult;
+    prima: PrimaResult;
+    vacaciones: VacacionesResult;
+    totalPrestaciones: number;
+    granTotal: number;
 }
 export interface DatosLaborales {
     salarioBase: number;

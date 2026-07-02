@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CCF_LIST = exports.ARL_LIST = exports.AFP_LIST = exports.EPS_LIST = exports.TASA_INTERES_CESANTIAS = exports.DIAS_ANO_COMERCIAL = exports.TASAS = exports.AUXILIO_TRANSPORTE_2025 = exports.SALARIO_MINIMO_2025 = exports.TipoCotizante = exports.RiesgoARL = exports.calcularCesantias = exports.calcularIBC = exports.calcularParafiscales = exports.calcularCCF = exports.calcularARL = exports.calcularPension = exports.calcularSalud = exports.SSI = void 0;
+exports.CESANTIAS_LIST = exports.CCF_LIST = exports.ARL_LIST = exports.AFP_LIST = exports.EPS_LIST = exports.TASA_INTERES_CESANTIAS = exports.DIAS_ANO_COMERCIAL = exports.TASAS = exports.AUXILIO_TRANSPORTE_2025 = exports.SALARIO_MINIMO_2025 = exports.TipoCotizante = exports.RiesgoARL = exports.calcularPrestacionesCompletas = exports.calcularVacaciones = exports.calcularPrima = exports.calcularCesantias = exports.calcularIBC = exports.calcularParafiscales = exports.calcularCCF = exports.calcularARL = exports.calcularPension = exports.calcularSalud = exports.SSI = void 0;
 var ssi_1 = require("./ssi");
 Object.defineProperty(exports, "SSI", { enumerable: true, get: function () { return ssi_1.SSI; } });
 var eps_1 = require("./eps");
@@ -17,6 +17,9 @@ var utils_1 = require("./utils");
 Object.defineProperty(exports, "calcularIBC", { enumerable: true, get: function () { return utils_1.calcularIBC; } });
 var prestaciones_1 = require("./prestaciones");
 Object.defineProperty(exports, "calcularCesantias", { enumerable: true, get: function () { return prestaciones_1.calcularCesantias; } });
+Object.defineProperty(exports, "calcularPrima", { enumerable: true, get: function () { return prestaciones_1.calcularPrima; } });
+Object.defineProperty(exports, "calcularVacaciones", { enumerable: true, get: function () { return prestaciones_1.calcularVacaciones; } });
+Object.defineProperty(exports, "calcularPrestacionesCompletas", { enumerable: true, get: function () { return prestaciones_1.calcularPrestacionesCompletas; } });
 var types_1 = require("./types");
 Object.defineProperty(exports, "RiesgoARL", { enumerable: true, get: function () { return types_1.RiesgoARL; } });
 Object.defineProperty(exports, "TipoCotizante", { enumerable: true, get: function () { return types_1.TipoCotizante; } });
@@ -34,4 +37,6 @@ var arl_2 = require("./data/arl");
 Object.defineProperty(exports, "ARL_LIST", { enumerable: true, get: function () { return arl_2.ARL_LIST; } });
 var ccf_2 = require("./data/ccf");
 Object.defineProperty(exports, "CCF_LIST", { enumerable: true, get: function () { return ccf_2.CCF_LIST; } });
+var cesantias_1 = require("./data/cesantias");
+Object.defineProperty(exports, "CESANTIAS_LIST", { enumerable: true, get: function () { return cesantias_1.CESANTIAS_LIST; } });
 //# sourceMappingURL=index.js.map

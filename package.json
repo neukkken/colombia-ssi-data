@@ -1,6 +1,6 @@
 {
   "name": "colombia-ssi",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Librería para el cálculo del Sistema de Seguridad Social Integral y prestaciones sociales en Colombia (EPS, Pensión, ARL, CCF, Parafiscales, Cesantías)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
